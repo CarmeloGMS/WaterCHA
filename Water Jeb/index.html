@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafío de los Jarrones de Agua</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="jug">
+      <div class="water" id="jug-x"></div>
+    </div>
+    <div class="jug">
+      <div class="water" id="jug-y"></div>
+    </div>
+  </div>
+  <div class="info">
+    <label for="jug-x-capacity">Capacidad del Jarrón X:</label>
+    <input type="number" id="jug-x-capacity" value="3" min="1">
+    <label for="jug-y-capacity">Capacidad del Jarrón Y:</label>
+    <input type="number" id="jug-y-capacity" value="5" min="1">
+    <label for="target-amount">Cantidad Objetivo:</label>
+    <input type="number" id="target-amount" value="4" min="1">
+    <button onclick="solveWaterJugChallenge()">Resolver</button>
+    <div id="solution-container"></div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
